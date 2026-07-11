@@ -387,6 +387,7 @@ export const zh_CN: TranslationMap = {
       skills: "技能",
       channels: "频道",
       cronJobs: "Cron Jobs",
+      memory: "Memory",
     },
     context: {
       title: "代理上下文",
@@ -639,7 +640,6 @@ export const zh_CN: TranslationMap = {
     modelProviders: "Model Providers",
     debug: "调试",
     logs: "日志",
-    dreams: "梦境",
     plugin: "插件",
   },
   subtitles: {
@@ -671,8 +671,10 @@ export const zh_CN: TranslationMap = {
     modelProviders: "Configured providers with plan, quota, and cost.",
     debug: "快照、事件、RPC。",
     logs: "实时网关日志。",
-    dreams: "睡眠时进行记忆巩固。",
     plugin: "插件提供的面板。",
+  },
+  mcpPage: {
+    manageServersLink: "Manage servers on the Plugins page.",
   },
   pluginsPage: {
     searchLabel: "搜索插件",
@@ -1571,10 +1573,6 @@ export const zh_CN: TranslationMap = {
     },
   },
   dreaming: {
-    agentSelect: {
-      label: "代理",
-      ariaLabel: "Dreaming agent",
-    },
     tabs: {
       scene: "场景",
       diary: "日记",

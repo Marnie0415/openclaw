@@ -395,6 +395,7 @@ export const ja_JP: TranslationMap = {
       skills: "Skills",
       channels: "チャンネル",
       cronJobs: "Cron ジョブ",
+      memory: "Memory",
     },
     context: {
       title: "Agent Context",
@@ -650,7 +651,6 @@ export const ja_JP: TranslationMap = {
     modelProviders: "Model Providers",
     debug: "デバッグ",
     logs: "ログ",
-    dreams: "Dreaming",
     plugin: "プラグイン",
   },
   subtitles: {
@@ -682,8 +682,10 @@ export const ja_JP: TranslationMap = {
     modelProviders: "Configured providers with plan, quota, and cost.",
     debug: "スナップショット、イベント、RPC。",
     logs: "ライブ Gateway ログ。",
-    dreams: "スリープ中のメモリ統合。",
     plugin: "プラグインが提供するパネル。",
+  },
+  mcpPage: {
+    manageServersLink: "Manage servers on the Plugins page.",
   },
   pluginsPage: {
     searchLabel: "プラグインを検索",
@@ -1602,10 +1604,6 @@ export const ja_JP: TranslationMap = {
     },
   },
   dreaming: {
-    agentSelect: {
-      label: "エージェント",
-      ariaLabel: "Dreaming agent",
-    },
     tabs: {
       scene: "Scene",
       diary: "Diary",

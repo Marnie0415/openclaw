@@ -1,11 +1,14 @@
 {
-  "fallbackKeys": [],
-  "generatedAt": "2026-07-11T14:59:49.705Z",
+  "fallbackKeys": [
+    "agents.tabs.memory",
+    "mcpPage.manageServersLink"
+  ],
+  "generatedAt": "2026-07-11T17:38:35.405Z",
   "locale": "th",
   "model": "gpt-5.6-sol",
   "provider": "openai",
-  "sourceHash": "79d9a15b975315f2753113d3fbe1b2cebcc2727bdaa84b78658e289b19449557",
-  "totalKeys": 2231,
-  "translatedKeys": 2231,
+  "sourceHash": "8b91513f244d09d8e665d12594e7d78a14150deaf18fcc1f3b47924a3f173bf4",
+  "totalKeys": 2229,
+  "translatedKeys": 2227,
   "workflow": 1
 }

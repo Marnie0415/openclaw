@@ -393,6 +393,7 @@ export const ru: TranslationMap = {
       skills: "Навыки",
       channels: "Каналы",
       cronJobs: "Cron Jobs",
+      memory: "Memory",
     },
     context: {
       title: "Контекст агента",
@@ -648,7 +649,6 @@ export const ru: TranslationMap = {
     modelProviders: "Model Providers",
     debug: "Отладка",
     logs: "Журналы",
-    dreams: "Сновидения",
     plugin: "Плагин",
   },
   subtitles: {
@@ -681,8 +681,10 @@ export const ru: TranslationMap = {
     modelProviders: "Configured providers with plan, quota, and cost.",
     debug: "Снимки, события, RPC.",
     logs: "Живые журналы шлюза.",
-    dreams: "Сновидения памяти, консолидация и рефлексия.",
     plugin: "Панель, предоставленная плагином.",
+  },
+  mcpPage: {
+    manageServersLink: "Manage servers on the Plugins page.",
   },
   pluginsPage: {
     searchLabel: "Поиск плагинов",
@@ -1601,10 +1603,6 @@ export const ru: TranslationMap = {
     },
   },
   dreaming: {
-    agentSelect: {
-      label: "Агент",
-      ariaLabel: "Агент Dreaming",
-    },
     tabs: {
       scene: "Сцена",
       diary: "Дневник",
