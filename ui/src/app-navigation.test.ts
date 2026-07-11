@@ -68,7 +68,7 @@ describe("navigationIconForRoute", () => {
       channels: "link",
       instances: "radio",
       sessions: "fileText",
-      usage: "barChart",
+      usage: "coins",
       cron: "calendarClock",
       tasks: "listChecks",
       agents: "bot",
@@ -76,7 +76,6 @@ describe("navigationIconForRoute", () => {
       plugins: "puzzle",
       "skill-workshop": "wrench",
       nodes: "monitor",
-      dreams: "moon",
       config: "settings",
       profile: "lobster",
       communications: "send",
@@ -120,7 +119,6 @@ describe("titleForRoute", () => {
       plugins: "Plugins",
       "skill-workshop": "Skill Workshop",
       nodes: "Nodes",
-      dreams: "Dreaming",
       config: "Settings",
       profile: "Profile",
       communications: "Communications",
@@ -158,7 +156,6 @@ describe("subtitleForRoute", () => {
       plugins: "Install and manage optional capabilities.",
       "skill-workshop": "Review, refine, and apply proposals before they become live skills.",
       nodes: "Paired devices and commands.",
-      dreams: "Memory dreaming, consolidation, and reflection.",
       config: "Edit openclaw.json.",
       profile: "Your agent's stats, streaks, and life in the reef.",
       communications: "Channels, messages, and audio settings.",
@@ -237,8 +234,8 @@ describe("routeIdFromPath", () => {
     expect(routeIdFromPath("/sessions")).toBe("sessions");
     expect(routeIdFromPath("/debug")).toBe("debug");
     expect(routeIdFromPath("/logs")).toBe("logs");
-    expect(routeIdFromPath("/dreaming")).toBe("dreams");
-    expect(routeIdFromPath("/dreams")).toBe("dreams");
+    expect(routeIdFromPath("/dreaming")).toBeNull();
+    expect(routeIdFromPath("/dreams")).toBeNull();
     expect(routeIdFromPath("/settings/plugins")).toBe("plugins");
     expect(routeIdFromPath("/plugins")).toBeNull();
     expect(routeIdFromPath("/settings/about")).toBe("about");
@@ -309,8 +306,6 @@ describe("inferBasePathFromPathname", () => {
     expect(inferBasePathFromPathname("/settings/general")).toBe("");
     expect(inferBasePathFromPathname("/settings/appearance")).toBe("");
     expect(inferBasePathFromPathname("/appearance")).toBe("");
-    expect(inferBasePathFromPathname("/dreaming")).toBe("");
-    expect(inferBasePathFromPathname("/dreams")).toBe("");
     expect(inferBasePathFromPathname("/settings/plugins")).toBe("");
   });
 
@@ -391,6 +386,7 @@ describe("SIDEBAR_NAV_ROUTES", () => {
       "worktrees",
       "debug",
       "logs",
+      "activity",
       "about",
     ]);
   });

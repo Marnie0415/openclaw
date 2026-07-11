@@ -14,7 +14,6 @@ type NavigationItem = {
 // list and Settings/Docs live in the sidebar footer, so neither is listed here.
 export const SIDEBAR_NAV_ROUTES = [
   "overview",
-  "activity",
   "workboard",
   "instances",
   "sessions",
@@ -26,7 +25,6 @@ export const SIDEBAR_NAV_ROUTES = [
   "plugins",
   "skill-workshop",
   "nodes",
-  "dreams",
 ] as const satisfies readonly NavigationRouteId[];
 
 export type SidebarNavRoute = (typeof SIDEBAR_NAV_ROUTES)[number];
@@ -79,7 +77,7 @@ export const SETTINGS_NAVIGATION_GROUPS = [
   },
   {
     labelKey: "nav.settingsGroupSystem",
-    routes: ["infrastructure", "worktrees", "debug", "logs", "about"],
+    routes: ["infrastructure", "worktrees", "debug", "logs", "activity", "about"],
   },
 ] as const satisfies readonly SettingsNavigationGroup[];
 
@@ -95,7 +93,7 @@ const NAVIGATION_ICONS: NavigationItem = {
   channels: "link",
   instances: "radio",
   sessions: "fileText",
-  usage: "barChart",
+  usage: "coins",
   cron: "calendarClock",
   tasks: "listChecks",
   skills: "zap",
@@ -115,7 +113,6 @@ const NAVIGATION_ICONS: NavigationItem = {
   "model-providers": "plug",
   debug: "bug",
   logs: "scrollText",
-  dreams: "moon",
   plugin: "puzzle",
   "new-session": "plus",
 };
@@ -214,7 +211,6 @@ const NAVIGATION_COPY: Record<NavigationRouteId, { titleKey: string; subtitleKey
   },
   debug: { titleKey: "tabs.debug", subtitleKey: "subtitles.debug" },
   logs: { titleKey: "tabs.logs", subtitleKey: "subtitles.logs" },
-  dreams: { titleKey: "tabs.dreams", subtitleKey: "subtitles.dreams" },
   plugin: { titleKey: "tabs.plugin", subtitleKey: "subtitles.plugin" },
   "new-session": { titleKey: "newSession.title", subtitleKey: "newSession.hint" },
 };
